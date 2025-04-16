@@ -25,7 +25,7 @@ pd_df=my_dataframe.to_pandas()
 st.dataframe(pd_df)
 st.dataframe(data=my_dataframe,use_container_width=True)
 #st.stop()
-ingredient_list = st.multiselect ("Choose up to 5 Incredients", my_dataframe, max_selections=5)
+ingredient_list = st.multiselect ("Choose up to 5 Incredients", pd_df, max_selections=5)
 if ingredient_list :
 ##       st.write(ingredient_list)
     ingredients_string =''
